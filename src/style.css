@@ -1,0 +1,111 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark; 
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+canvas{
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: -1;
+}
+
+header{
+  display: flex; 
+  justify-content: space-between;
+}
+
+header .title{
+  color: #5500c4b9;
+  margin: 30px;
+  margin-left: 10%; 
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: Impact; 
+}
+
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+
+header ul li {
+  overflow: hidden;
+  position: relative;
+  margin: 0 15px; 
+  color: #ffffff4d;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+
+}
+
+
+header ul li:before {
+  content: '';
+  background-color: #5500c4;
+  position: absolute; 
+  left: -100%;
+  width: 100%;
+  height: 3px;  
+  bottom: 0;
+
+  transition: .5s .3s left cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+header ul li:hover { 
+  color: #ffffff; 
+  font-weight: bold;
+  width: 120px; 
+}
+header ul li:hover:before {
+  left: 0;
+}
+
+
+
+header ul li.hire-me { 
+  color: #7d29eb;  
+  font-family: Impact;
+  margin: 0 3vw; 
+  width: 120px;
+
+  font-family:   Georgia, 'Times New Roman', Times, serif
+
+}
+
+header ul li.hire-me:hover {
+  font-weight: 900;
+  width: 200px;
+ }
+
+
+.rotate-me{
+  position: absolute;
+  top: 85%;
+  color: #ffffff1a;
+  font-weight: bold;
+  font-size: 3em;
+
+  left: 50%;
+  translate: -50% 0;
+}
